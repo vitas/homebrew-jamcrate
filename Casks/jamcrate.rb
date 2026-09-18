@@ -4,8 +4,10 @@ cask "jamcrate" do
   version "0.9.1"
   sha256 "1ffed54e2b634081f31312a8eb2cf495be88854112096b2ec26aa638694db797"
 
-  url "https://github.com/vitas/jamcrate-beta/releases/download/v#{version}-beta/JamCrate.dmg",
-      verified: "github.com/vitas/jamcrate-beta/"
+  # No  stanza: Homebrew deprecated it and now verifies the URL domain
+  # by default. Keeping it makes 254 kegs, 281,091 files, 9.8GB print a deprecation warning to every
+  # user of the tap, and  does not flag it.
+  url "https://github.com/vitas/jamcrate-beta/releases/download/v#{version}-beta/JamCrate.dmg"
   name "JamCrate"
   desc "Backing-track player with solo markers and loops"
   homepage "https://jamcrate.app/"
