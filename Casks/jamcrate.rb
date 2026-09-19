@@ -2,7 +2,7 @@
 # version or sha256 by hand; re-run the generator after each release.
 cask "jamcrate" do
   version "0.9.1"
-  sha256 "1ffed54e2b634081f31312a8eb2cf495be88854112096b2ec26aa638694db797"
+  sha256 "cad792e47ff1e08d8fc8ab44735e70e8715d1693a6d068c825e647cd434f9ed4"
 
   # No "verified" stanza: Homebrew deprecated it and now verifies the URL domain
   # by default. Keeping it makes brew info print a deprecation warning to every
@@ -23,13 +23,6 @@ cask "jamcrate" do
   end
 
   depends_on macos: :sonoma
-
-  caveats <<~EOS
-    This build is ad-hoc signed, so macOS blocks the first launch.
-    Open it once via  System Settings → Privacy & Security → "Open Anyway",
-    or right-click JamCrate.app and choose Open. Only needed once.
-    Notarized builds will not need this.
-  EOS
 
   app "JamCrate.app"
 end
