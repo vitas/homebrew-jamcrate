@@ -2,7 +2,7 @@
 # version or sha256 by hand; re-run the generator after each release.
 cask "jamcrate" do
   version "0.9.3"
-  sha256 "3cdebc76787af9ca18f5dca8bc6907c07b1b5913427225f2de17368297e517f2"
+  sha256 "ec3892971ae0e637a3c9a67782e074522a8c90e99c65b2bfc3f252059b7a33d4"
 
   # No "verified" stanza: Homebrew deprecated it and now verifies the URL domain
   # by default. Keeping it makes brew info print a deprecation warning to every
